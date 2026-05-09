@@ -1,0 +1,96 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background: #fafafa;
+}
+
+.container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #1a365d 0%, #2563eb 100%);
+  color: #fff;
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.hero h1 { font-size: 2.6em; font-weight: 700; margin-bottom: 8px; }
+.hero .subtitle { font-size: 1.2em; opacity: 0.9; margin-bottom: 12px; }
+.hero .tagline { font-size: 0.95em; opacity: 0.75; max-width: 500px; margin: 0 auto; }
+
+/* Sections */
+main section {
+  padding: 48px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+main section:last-of-type { border-bottom: none; }
+
+h2 {
+  font-size: 1.5em;
+  color: #1a365d;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #2563eb;
+  display: inline-block;
+}
+
+p { margin-bottom: 12px; }
+
+/* Publications */
+.pub-list { list-style: none; }
+.pub-list li {
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+.pub-title { font-weight: 600; color: #1a365d; }
+.pub-journal { font-size: 0.9em; color: #6b7280; }
+
+/* Projects */
+.project {
+  margin-bottom: 24px;
+}
+.project h3 { font-size: 1.1em; color: #2563eb; margin-bottom: 8px; }
+
+/* Visualizations */
+.viz-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.viz-placeholder {
+  background: #fff;
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  padding: 60px 24px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.9em;
+}
+
+/* Footer */
+footer {
+  background: #1a365d;
+  color: #9ca3af;
+  text-align: center;
+  padding: 24px 0;
+  font-size: 0.85em;
+}
+
+/* Links */
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero { padding: 48px 0 36px; }
+  .hero h1 { font-size: 2em; }
+  .viz-grid { grid-template-columns: 1fr; }
+}
