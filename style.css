@@ -9,6 +9,30 @@ body {
 
 .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
 
+/* Language switch */
+.lang-switch {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.lang-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: #fff;
+  padding: 4px 14px;
+  font-size: 0.85em;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 6px;
+  transition: all 0.2s;
+}
+.lang-btn.active {
+  background: #fff;
+  color: #1a365d;
+  border-color: #fff;
+}
+.lang-btn:hover { background: rgba(255,255,255,0.15); }
+.lang-btn.active:hover { background: #fff; }
+
 /* Hero */
 .hero {
   background: linear-gradient(135deg, #1a365d 0%, #2563eb 100%);
