@@ -63,6 +63,7 @@ h2 {
 }
 
 p { margin-bottom: 12px; }
+.placeholder { color: #9ca3af; }
 
 /* Publications */
 .pub-list { list-style: none; }
